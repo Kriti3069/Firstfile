@@ -1,0 +1,21 @@
+print(range(10))
+
+print(list(range(10)))
+
+print(list(range(2, 8)))
+
+print(list(range(2, 20, 3)))
+#Print all items by referring to their index number:
+list = ["apple", "banana", "cherry"]
+for i in range(len(list)):
+  print(list[i])
+  
+#while loop
+list = ["apple", "banana", "cherry"]
+i = 0
+while i < len(list):
+  print(list[i])
+  i = i + 1
+#Looping Using List Comprehension 
+list = ["apple", "banana", "cherry"]
+[print(x) for x in list]

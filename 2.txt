@@ -1,0 +1,38 @@
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  #looping through a string as strings are also iterable
+for x in "banana":
+  print(x, end=" ")
+for x in "banana":
+  print(x)
+  
+  #break statement
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+
+ #Exit the loop when x is "banana", but this time the break comes before the print
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+  
+  #continue statement
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+ #Break the loop when x is 3, and it will not take else statement: 
+for x in range(6):
+  if x == 3: break
+  print(x)
+else:
+  print("Finally finished!")
+ #Nested Loops 
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+for x in adj:
+  for y in fruits:
+    print(x, y)
